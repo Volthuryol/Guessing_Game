@@ -1,0 +1,38 @@
+.guess{
+  width: 33%;
+  height: 5em;
+  font-size: 2em;
+  opacity: 2%;
+}
+.col-md-3{
+  border: 5px bold black;
+}
+.center{
+  margin-left: 48%;
+  margin-right: 52%;
+} 
+body{
+  background-image: url("http://media.gettyimages.com/videos/binary-numbers-blue-background-loop-video-id117450882?s=640x640");
+  background-size: 100%;
+}
+#turns{
+  color: white;
+  margin-left: 37%;
+  margin-right: 50%;
+  width : 40%;
+}
+p{
+  color: navajowhite;
+  font-size: 20pt;
+}
+#counter{
+  margin-left: 48%;
+  margin-right: 52%;
+}
+#b{
+  margin-left: 50%;
+  margin-right: 50%;
+}
+#c{
+  float: right;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Guessing Game</title>
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap-theme.css">
+  <link rel="stylesheet" href="guessingGame.css">
+</head>
+
+<body>
+
+  <p>Hello, welcome to my game! You will have 10 tries to guess the random numbers chosen.</p>
+  <br />
+  <p>Here are the rules: If a number doesn't match that box's number, and doesn't match any of the numbers in the sequence,
+    the box should be red If a number matches that box's number, the box should be green If a number doesn't match that box's
+    number, but does match one of the numbers in the sequence, the box should be yellow</p>
+  <hr />
+
+  <form class="answer">
+    <input type="tel" maxlength="1" id="input1" class="guess" onkeypress="return isNumberKey(event)">
+    <input type="tel" maxlength="1" id="input2" class="guess" onkeypress="return isNumberKey(event)">
+    <input type="tel" maxlength="1" id="input3" class="guess" onkeypress="return isNumberKey(event)">
+  </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <h1 id="a"></h1>
+      </div>
+      <div class="col-md-3">
+        <h1 id="b"></h1>
+      </div>
+      <div class="col-md-3">
+        <h1 id="c"></h1>
+      </div>
+    </div>
+  </div>
+  <button class="submit1 submit2 submit3 guess1" id="counter">Check</button>
+
+  <h1 id="turns"></h1>
+  <script src="jquery-3.1.1.min.js"></script>
+  <script src="jquery-ui-1.12.1/jquery-ui.js"></script>
+  <script src="guessingGame.js"></script>
+</body>
+
+</html>
